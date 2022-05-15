@@ -28,6 +28,11 @@ svgomg */
   --item-gap: 30px;
 }
 
+.form__thumb, .form__input, .btn-close-icon, .backdrop, .button__thumb, .subscription__input, .address__link, .portfolio__text, .portfolio__link, .filtr__btn, .clients__link, .socials__link, .button, .header-menu__link {
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 /* --------------- Common */
 body {
   font-family: Roboto, sans-serif;
@@ -133,8 +138,6 @@ p {
   letter-spacing: 0.02em;
   text-decoration: none;
   transition-property: color, fill;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .header-menu__link:hover, .header-menu__link:focus {
   color: var(--accent-color);
@@ -238,8 +241,6 @@ p {
   border-radius: 4px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   transition-property: color, background-color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .button:hover, .button:focus {
   background-color: var(--btn-text-color);
@@ -380,8 +381,6 @@ p {
   color: var(--icon-color);
   border-radius: 50%;
   transition-property: color, background-color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .socials__link:hover, .socials__link:focus {
   color: var(--logo-color-dark);
@@ -408,8 +407,6 @@ p {
   border: 1px solid var(--icon-color);
   border-radius: 4px;
   transition-property: color, border;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .clients__link:hover, .clients__link:focus {
   color: var(--accent-color);
@@ -448,8 +445,6 @@ p {
   border: 1px solid var(--second-bg-color);
   border-radius: 4px;
   transition-property: color, background-color, border, box-shadow;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .filtr__btn:hover, .filtr__btn:focus {
   color: var(--btn-text-color);
@@ -477,8 +472,6 @@ p {
   display: block;
   text-decoration: none;
   transition-property: box-shadow;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .portfolio__link:hover, .portfolio__link:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
@@ -505,8 +498,6 @@ p {
   color: var(--portfolio-overlay-text-color);
   background-color: var(--portfolio-overlay-bg-color);
   transition-property: opacity, top;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .portfolio__link:hover .portfolio__text, .portfolio__link:focus .portfolio__text {
   top: 0;
@@ -575,8 +566,6 @@ p {
   line-height: 1.71;
   text-decoration: none;
   transition-property: color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .address__link:hover, .address__link:focus {
   color: var(--accent-color);
@@ -617,8 +606,6 @@ p {
   border: 1px solid var(--subscr-border-color);
   border-radius: 4px;
   transition-property: border;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .subscription__input:focus {
   border: 1px solid var(--accent-color);
@@ -640,8 +627,6 @@ p {
   padding: 0;
   fill: var(--btn-text-color);
   transition-property: fill;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .button:hover .button__thumb, .button:focus .button__thumb {
   fill: var(--accent-color);
@@ -656,8 +641,6 @@ p {
   height: 100%;
   background-color: var(--backdrop-color);
   transition-property: opacity, visibility;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .is-hidden {
@@ -690,8 +673,6 @@ p {
   border: 1px solid var(--close-border-color);
   border-radius: 50%;
   transition-property: fill;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .btn-close-icon:hover, .btn-close-icon:focus {
   fill: var(--accent-color);
@@ -754,8 +735,6 @@ p {
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   transition-property: border;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .form__input:focus {
   outline: 1px solid transparent;
@@ -772,8 +751,6 @@ p {
   padding: 0;
   color: var(--title-text-color);
   transition-property: color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .form__item:focus-within .form__thumb {
   color: var(--accent-color);

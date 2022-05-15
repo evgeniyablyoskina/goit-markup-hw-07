@@ -21,8 +21,7 @@
   border-radius: 4px;
 
   transition-property: border;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  @extend %transition-data;
 
   &:focus {
     border: 1px solid var(--accent-color);
@@ -49,8 +48,7 @@
   fill: var(--btn-text-color);
 
   transition-property: fill;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  @extend %transition-data;
 
   .button:hover &,
   .button:focus & {

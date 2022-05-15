@@ -21,8 +21,7 @@
   text-decoration: none;
 
   transition-property: box-shadow;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  @extend %transition-data;
 
   &:hover,
   &:focus {
@@ -59,8 +58,7 @@
   background-color: var(--portfolio-overlay-bg-color);
 
   transition-property: opacity, top;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  @extend %transition-data;
 
   .portfolio__link:hover &,
   .portfolio__link:focus & {
