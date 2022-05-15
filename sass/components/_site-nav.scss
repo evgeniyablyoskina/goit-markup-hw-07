@@ -1,0 +1,29 @@
+.site-nav {
+  margin-left: 93px;
+  margin-right: auto;
+}
+
+.site-nav__link {
+  display: inline-block;
+
+  color: var(--title-text-color);
+}
+
+.site-nav__link--current {
+  position: relative;
+
+  color: var(--accent-color);
+
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+
+    width: 100%;
+
+    background-color: var(--accent-color);
+    border: 2px solid var(--accent-color);
+    border-radius: 2px;
+  }
+}
