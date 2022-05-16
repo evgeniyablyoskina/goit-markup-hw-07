@@ -32,8 +32,8 @@
   stroke-width: 0.4267;
 
   .terms__checkbox:checked + & {
-    border: 1px solid var(--accent-color);
-    background-color: var(--accent-color);
+    border: 1px solid var($accent-color);
+    background-color: var($accent-color);
     fill: white;
     stroke: white;
     stroke-linejoin: miter;
@@ -50,5 +50,5 @@
 }
 
 .terms__link {
-  color: var(--accent-color);
+  color: var($accent-color);
 }

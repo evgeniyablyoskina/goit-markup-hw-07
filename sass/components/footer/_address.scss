@@ -22,14 +22,14 @@
 
   &:hover,
   &:focus {
-    color: var(--accent-color);
+    color: var($accent-color);
   }
 
   &--bright {
-    color: var(--light-text-color);
+    color: var($light-text-color);
   }
 
   &--dull {
-    color: var(--address-contact-color);
+    color: var($address-contact-color);
   }
 }

@@ -15,17 +15,17 @@
 
   padding-left: 16px;
 
-  color: var(--light-text-color);
-  background-color: var(--dark-bg-color);
-  border: 1px solid var(--subscr-border-color);
+  color: var($light-text-color);
+  background-color: var($dark-bg-color);
+  border: 1px solid var($subscr-border-color);
   border-radius: 4px;
 
   transition-property: border;
   @extend %transition-data;
 
   &:focus {
-    border: 1px solid var(--accent-color);
-    outline: 1px solid var(--accent-color);
+    border: 1px solid var($accent-color);
+    outline: 1px solid var($accent-color);
   }
 }
 
@@ -45,13 +45,13 @@
   margin-left: 10px;
   padding: 0;
 
-  fill: var(--twin-accent-color);
+  fill: var($twin-accent-color);
 
   transition-property: fill;
   @extend %transition-data;
 
   .button:hover &,
   .button:focus & {
-    fill: var(--accent-color);
+    fill: var($accent-color);
   }
 }

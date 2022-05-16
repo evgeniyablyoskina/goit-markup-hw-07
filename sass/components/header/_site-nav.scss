@@ -6,13 +6,13 @@
 .site-nav__link {
   display: inline-block;
 
-  color: var(--title-text-color);
+  color: var($title-text-color);
 }
 
 .site-nav__link--current {
   position: relative;
 
-  color: var(--accent-color);
+  color: var($accent-color);
 
   &::after {
     content: '';
@@ -22,8 +22,8 @@
 
     width: 100%;
 
-    background-color: var(--accent-color);
-    border: 2px solid var(--accent-color);
+    background-color: var($accent-color);
+    border: 2px solid var($accent-color);
     border-radius: 2px;
   }
 }

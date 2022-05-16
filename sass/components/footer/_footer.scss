@@ -4,7 +4,7 @@
   padding-top: 60px;
   padding-bottom: 60px;
 
-  background-color: var(--dark-bg-color);
+  background-color: var($dark-bg-color);
 }
 
 .footer__box {
@@ -20,7 +20,7 @@
   line-height: 1.14;
   text-transform: uppercase;
 
-  color: var(--light-text-color);
+  color: var($light-text-color);
 }
 
 /* END Footer */

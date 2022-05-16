@@ -2,8 +2,8 @@
   display: flex;
   align-items: center;
 
-  color: var(--primary-text-color);
-  fill: var(--primary-text-color);
+  color: var($primary-text-color);
+  fill: var($primary-text-color);
 }
 
 .header-contacts__icon {
