@@ -1,23 +1,18 @@
 @charset "UTF-8";
-/* TODO
-svgomg */
-/* позиционирование, геометрия, текст, оформление  */
 :root {
   --primary-text-color: #757575;
   --title-text-color: #212121;
   --hero-title-color: #ffffff;
-  --btn-text-color: #ffffff;
-  --accent-color: #2196f3;
+  --light-text-color: #ffffff;
   --main-bg-color: #ffffff;
-  --dark-bg-color: #2f303a;
   --second-bg-color: #f5f4fa;
+  --dark-bg-color: #2f303a;
+  --accent-color: #2196f3;
+  --twin-accent-color: #ffffff;
   --logo-color: #000000;
-  --logo-color-dark: #ffffff;
   --address-contact-color: rgba(255, 255, 255, 0.6);
-  --address-map-color: #ffffff;
   --icon-color: #afb1b8;
   --icon-bg-color: rgba(255, 255, 255, 0.1);
-  --label-doing-color: #ffffff;
   --label-doing-bg-color: rgba(47, 48, 58, 0.8);
   --portfolio-overlay-text-color: #ffffff;
   --portfolio-overlay-bg-color: rgba(33, 150, 243, 0.9);
@@ -103,7 +98,7 @@ p {
 }
 
 .logo--inverse {
-  color: var(--logo-color-dark);
+  color: var(--twin-accent-color);
 }
 
 /* END Logo */
@@ -235,7 +230,7 @@ p {
   letter-spacing: 0.06em;
   text-align: center;
   cursor: pointer;
-  color: var(--btn-text-color);
+  color: var(--twin-accent-color);
   background-color: var(--accent-color);
   border: 1px solid var(--accent-color);
   border-radius: 4px;
@@ -243,7 +238,7 @@ p {
   transition-property: color, background-color;
 }
 .button:hover, .button:focus {
-  background-color: var(--btn-text-color);
+  background-color: var(--twin-accent-color);
   color: var(--accent-color);
 }
 
@@ -317,7 +312,7 @@ p {
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
-  color: var(--label-doing-color);
+  color: var(--light-text-color);
   background-color: var(--label-doing-bg-color);
 }
 
@@ -383,7 +378,7 @@ p {
   transition-property: color, background-color;
 }
 .socials__link:hover, .socials__link:focus {
-  color: var(--logo-color-dark);
+  color: var(--twin-accent-color);
   background-color: var(--accent-color);
 }
 
@@ -447,7 +442,7 @@ p {
   transition-property: color, background-color, border, box-shadow;
 }
 .filtr__btn:hover, .filtr__btn:focus {
-  color: var(--btn-text-color);
+  color: var(--twin-accent-color);
   background-color: var(--accent-color);
   border: 1px solid var(--accent-color);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
@@ -545,7 +540,7 @@ p {
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
-  color: var(--logo-color-dark);
+  color: var(--light-text-color);
 }
 
 /* END Footer */
@@ -571,7 +566,7 @@ p {
   color: var(--accent-color);
 }
 .address__link--bright {
-  color: var(--address-map-color);
+  color: var(--light-text-color);
 }
 .address__link--dull {
   color: var(--address-contact-color);
@@ -583,7 +578,7 @@ p {
 }
 
 .join__socials__link {
-  color: var(--logo-color-dark);
+  color: var(--light-text-color);
   background-color: var(--icon-bg-color);
 }
 
@@ -601,7 +596,7 @@ p {
   height: 50px;
   margin-right: 12px;
   padding-left: 16px;
-  color: var(--logo-color-dark);
+  color: var(--light-text-color);
   background-color: var(--dark-bg-color);
   border: 1px solid var(--subscr-border-color);
   border-radius: 4px;
@@ -625,7 +620,7 @@ p {
   align-items: center;
   margin-left: 10px;
   padding: 0;
-  fill: var(--btn-text-color);
+  fill: var(--twin-accent-color);
   transition-property: fill;
 }
 .button:hover .button__thumb, .button:focus .button__thumb {
@@ -817,4 +812,8 @@ p {
 
 .terms__link {
   color: var(--accent-color);
-}/*# sourceMappingURL=main.css.map */
+}
+
+/* TODO
+svgomg */
+/* позиционирование, геометрия, текст, оформление  *//*# sourceMappingURL=main.css.map */
