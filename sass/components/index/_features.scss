@@ -18,7 +18,7 @@
 
   height: 120px;
 
-  background-color: var($second-bg-color);
+  background-color: var(--second-bg-color);
   border-radius: 4px;
 }
 
@@ -30,7 +30,7 @@
   line-height: 1.14;
   text-transform: uppercase;
 
-  color: var($title-text-color);
+  color: var(--title-text-color);
 }
 
 .features__description {

@@ -2,8 +2,8 @@
 :root {
   --primary-text-color: #757575;
   --title-text-color: #212121;
-  --hero-title-color: #ffffff;
   --light-text-color: #ffffff;
+  --hero-title-color: #ffffff;
   --main-bg-color: #ffffff;
   --second-bg-color: #f5f4fa;
   --dark-bg-color: #2f303a;
@@ -21,11 +21,6 @@
   --subscr-border-color: rgba(255, 255, 255, 0.3);
   --close-border-color: rgba(0, 0, 0, 0.1);
   --item-gap: 30px;
-}
-
-.form__thumb, .form__input, .btn-close-icon, .backdrop, .button__thumb, .subscription__input, .address__link, .portfolio__text, .portfolio__link, .filtr__btn, .clients__link, .socials__link, .button, .header-menu__link {
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* --------------- Common */
@@ -80,6 +75,11 @@ p {
           clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+
+.form__thumb, .form__input, .btn-close-icon, .backdrop, .button__thumb, .subscription__input, .address__link, .portfolio__text, .portfolio__link, .filtr__btn, .clients__link, .socials__link, .button, .header-menu__link {
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* --------------- Logo */
