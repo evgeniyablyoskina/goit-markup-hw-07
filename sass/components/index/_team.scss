@@ -1,12 +1,6 @@
 /* --------------- Our team */
 
 .team {
-  margin-bottom: 0;
-
-  background-color: var(--second-bg-color);
-}
-
-.team__list {
   display: flex;
 
   margin-left: calc(-1 * var(--item-gap));

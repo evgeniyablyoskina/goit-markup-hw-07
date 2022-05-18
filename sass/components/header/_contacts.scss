@@ -1,4 +1,16 @@
+/* --------------- Header Contacts */
+
+.header-contacts {
+  @extend %header-menu;
+}
+
+.header-contacts__item {
+  @extend %header-menu__item;
+}
+
 .header-contacts__link {
+  @extend %header-menu__link;
+
   display: flex;
   align-items: center;
 
@@ -9,3 +21,5 @@
 .header-contacts__icon {
   margin-right: 10px;
 }
+
+/* END Header Contacts */

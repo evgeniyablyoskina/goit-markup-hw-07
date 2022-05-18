@@ -63,6 +63,7 @@ p {
 }
 
 /* END Common */
+/* --------------- Visually Hidden */
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -77,11 +78,41 @@ p {
   overflow: hidden;
 }
 
-.form__thumb, .form__input, .btn-close-icon, .backdrop, .button__thumb, .subscription__input, .address__link, .portfolio__text, .portfolio__link, .filtr__btn, .clients__link, .socials__link, .button, .header-menu__link {
+/* END Visually Hidden */
+/* --------------- Placeholders */
+.form__thumb, .form__input, .btn-close-icon, .backdrop, .button__thumb, .subscription__input, .address__link, .portfolio__text, .portfolio__link, .filtr__btn, .clients__link, .socials__link, .button, .header-contacts__link, .site-nav__link {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.header-contacts, .site-nav {
+  display: flex;
+  align-items: center;
+}
+
+.header-contacts__item, .site-nav__item {
+  display: block;
+}
+.header-contacts__item:not(:last-child), .site-nav__item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.header-contacts__link, .site-nav__link {
+  padding-top: 32px;
+  padding-bottom: 32px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  transition-property: color, fill;
+}
+.header-contacts__link:hover, .site-nav__link:hover, .header-contacts__link:focus, .site-nav__link:focus {
+  color: var(--accent-color);
+  fill: var(--accent-color);
+}
+
+/* END Placeholders */
 /* --------------- Logo */
 .logo {
   display: inline-block;
@@ -93,7 +124,7 @@ p {
   color: var(--logo-color);
 }
 
-.logo--accent {
+.logo__accent {
   color: var(--accent-color);
 }
 
@@ -102,44 +133,18 @@ p {
 }
 
 /* END Logo */
-/* --------------- Header */
+/* --------------- Page-Header */
 .page-header {
   border-bottom: 1px solid #ececec;
 }
 
-.page-header__box {
+.page-header__container {
   display: flex;
   align-items: center;
 }
 
-.header-menu {
-  display: flex;
-  align-items: center;
-}
-
-.header-menu__item {
-  display: block;
-}
-.header-menu__item:not(:last-child) {
-  margin-right: 50px;
-}
-
-.header-menu__link {
-  padding-top: 32px;
-  padding-bottom: 32px;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-  text-decoration: none;
-  transition-property: color, fill;
-}
-.header-menu__link:hover, .header-menu__link:focus {
-  color: var(--accent-color);
-  fill: var(--accent-color);
-}
-
-/* END Header */
+/* END Page-Header */
+/* --------------- Site-nav */
 .site-nav {
   margin-left: 93px;
   margin-right: auto;
@@ -165,6 +170,8 @@ p {
   border-radius: 2px;
 }
 
+/* END Site-nav */
+/* --------------- Header Contacts */
 .header-contacts__link {
   display: flex;
   align-items: center;
@@ -176,6 +183,8 @@ p {
   margin-right: 10px;
 }
 
+/* END Header Contacts */
+/* --------------- For all Sections */
 .section {
   padding-top: 94px;
   padding-bottom: 94px;
@@ -191,6 +200,16 @@ p {
   color: var(--title-text-color);
 }
 
+.section--no-padding-top {
+  padding-top: 0;
+}
+
+.section--other-background {
+  margin-bottom: 0;
+  background-color: var(--second-bg-color);
+}
+
+/* END For all Sections */
 /* --------------- Hero */
 .hero {
   margin-left: auto;
@@ -218,6 +237,7 @@ p {
 }
 
 /* END Hero */
+/* --------------- Button */
 .button {
   display: block;
   margin-left: auto;
@@ -242,6 +262,7 @@ p {
   color: var(--accent-color);
 }
 
+/* END Button */
 /* --------------- Features */
 .features {
   display: flex;
@@ -253,7 +274,7 @@ p {
   margin-left: var(--item-gap);
 }
 
-.features__icon {
+.features__thumb {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -281,10 +302,6 @@ p {
 
 /* END Features */
 /* --------------- Our Doings */
-.section__doings {
-  padding-top: 0;
-}
-
 .doings {
   display: flex;
   margin-left: calc(-1 * var(--item-gap));
@@ -319,11 +336,6 @@ p {
 /* END Our Doings */
 /* --------------- Our team */
 .team {
-  margin-bottom: 0;
-  background-color: var(--second-bg-color);
-}
-
-.team__list {
   display: flex;
   margin-left: calc(-1 * var(--item-gap));
 }
@@ -358,7 +370,8 @@ p {
 }
 
 /* END our team */
-.socials__list {
+/* --------------- Socials */
+.socials {
   display: flex;
   justify-content: center;
 }
@@ -386,6 +399,7 @@ p {
   fill: currentColor;
 }
 
+/* END Socials */
 /* --------------- Our Clients */
 .clients {
   display: flex;
@@ -544,6 +558,7 @@ p {
 }
 
 /* END Footer */
+/* --------------- Address */
 .address {
   margin-top: 20px;
   width: 231px;
@@ -572,7 +587,8 @@ p {
   color: var(--address-contact-color);
 }
 
-/* ----- Join */
+/* END Address */
+/* --------------- Join */
 .join {
   margin-left: 70px;
 }
@@ -582,7 +598,8 @@ p {
   background-color: var(--icon-bg-color);
 }
 
-/* Subscription */
+/* END Join */
+/* --------------- Subscription */
 .subscription {
   margin-left: 93px;
 }
@@ -627,6 +644,7 @@ p {
   fill: var(--accent-color);
 }
 
+/* END Subscription */
 /* --------------- Modal Window */
 .backdrop {
   position: fixed;
@@ -678,6 +696,7 @@ p {
 }
 
 /* END Modal Window */
+/* --------------- Form */
 .form {
   width: 448px;
   margin-left: auto;
@@ -763,6 +782,8 @@ p {
   resize: none;
 }
 
+/* END Form */
+/* --------------- Terms */
 .terms {
   margin-bottom: 30px;
 }
@@ -814,6 +835,8 @@ p {
   color: var(--accent-color);
 }
 
+/* END Terms */
 /* TODO
 svgomg */
-/* позиционирование, геометрия, текст, оформление  *//*# sourceMappingURL=main.css.map */
+/* позиционирование, геометрия, текст, оформление  */
+/*# sourceMappingURL=main.css.map */

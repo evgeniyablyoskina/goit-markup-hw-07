@@ -1,9 +1,17 @@
+/* --------------- Site-nav */
+
 .site-nav {
   margin-left: 93px;
   margin-right: auto;
+  @extend %header-menu;
 }
 
+.site-nav__item {
+  @extend %header-menu__item;
+}
 .site-nav__link {
+  @extend %header-menu__link;
+
   display: inline-block;
 
   color: var(--title-text-color);
@@ -27,3 +35,5 @@
     border-radius: 2px;
   }
 }
+
+/* END Site-nav */

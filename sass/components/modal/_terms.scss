@@ -1,3 +1,5 @@
+/* --------------- Terms */
+
 .terms {
   margin-bottom: 30px;
 }
@@ -6,7 +8,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-
+  
   margin: 0;
 }
 
@@ -14,9 +16,9 @@
   position: relative;
   width: 16px;
   height: 15px;
-
+  
   display: block;
-
+  
   margin: 0;
   padding: 0;
 }
@@ -52,3 +54,5 @@
 .terms__link {
   color: var(--accent-color);
 }
+
+/* END Terms */

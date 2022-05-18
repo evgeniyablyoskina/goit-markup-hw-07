@@ -1,3 +1,5 @@
+/* --------------- For all Sections */
+
 .section {
   padding-top: 94px;
   padding-bottom: 94px;
@@ -14,3 +16,15 @@
 
   color: var(--title-text-color);
 }
+
+.section--no-padding-top {
+  padding-top: 0;
+}
+
+.section--other-background {
+  margin-bottom: 0;
+
+  background-color: var(--second-bg-color);
+}
+
+/* END For all Sections */
